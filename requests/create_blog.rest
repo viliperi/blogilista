@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "author": "Turha Turpeinen",
+  "title": "pölynimuripussin rakenne",
+  "likes": 3,
+  "url": "www.turhatieto.com"
+}
