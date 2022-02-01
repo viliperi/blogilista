@@ -1,0 +1,9 @@
+PUT http://localhost:3003/api/blogs/61b9d62ba8691bf946c9fde4
+Content-Type: application/json
+
+{
+  "title": "Mastering basic programming skills",
+  "author": "Erikki Esimerkki",
+  "url": "www.codingisfun.com",
+  "likes": 6
+}

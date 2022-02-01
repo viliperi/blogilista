@@ -1,0 +1,8 @@
+post http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "ab",
+  "name": "Ching Yun Zen",
+  "password": "supersecret"
+}
