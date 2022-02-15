@@ -1,10 +1,10 @@
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1cGVydXNlciIsImlkIjoiNjFlMTQ2NDg4MjVhZmNjNjYyNDNhOTcwIiwiaWF0IjoxNjQyNTg0NjM3LCJleHAiOjE2NDI1ODgyMzd9.ml_pEF5jdRT2qvTX2_9VTai7KUi1xMfvJaSWnrXKgoQ
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImN5eiIsImlkIjoiNjIwYjgyNDdiMzczNTRhYjUwYWMwNWIyIiwiaWF0IjoxNjQ0OTMxOTQ2LCJleHAiOjE2NDQ5MzU1NDZ9.xJ60bpaWtoeId4bu2RAOpm8UXe_wu9xANVyOcZDMgeA
 
 {
-  "author": "superuser",
-  "title": "Learning new stuff takes time",
-  "likes": 12345,
-  "url": "www.Learningcenter.com"
+  "author": "Ching Yun Zen",
+  "title": "Ball Fish",
+  "likes": 123,
+  "url": "www.newfishfordish.com"
 }

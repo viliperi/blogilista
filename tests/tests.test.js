@@ -1,4 +1,5 @@
 const listHelper = require('../utils/list_helper')
+const helper = require('./helper')
 
 test('dummy returns one', () => {
   const blogs = []
@@ -9,29 +10,11 @@ test('dummy returns one', () => {
 
 describe('totalLikes', () => {
   test('of bloglist with multiple entries is calculated right', () => {
-    const blogs = [
-      {
-        "author": "Turha Turpeinen",
-        "title": "pölynimuripussin rakenne",
-        "likes": 3,
-        "url": "www.turhatieto.com"
-      },
-      {
-        "author": "Turha Turpeinen",
-        "title": "pölynimuripussin rakenne",
-        "likes": 3,
-        "url": "www.turhatieto.com"
-      },
-      {
-        "author": "Turha Turpeinen",
-        "title": "pölynimuripussin rakenne",
-        "likes": 3,
-        "url": "www.turhatieto.com"
-      }
-    ]
+    const blogs = helper.initialBlogs
 
     const result = listHelper.totalLikes(blogs)
-    expect(result).toBe(9)
+
+    expect(result).toBe(98)
   })
 
   test('of empty blogs list is zero', () => {
@@ -126,29 +109,13 @@ describe('Author with most blogs', () => {
 
 describe('the most total likes', () => {
   test('of multiple authors', () => {
-    const blogs = [
-      {
-        title: "Happy new year",
-        author: "Anna Belle",
-        likes: 25
-      },
-      {
-        title: "Science rules the world",
-        author: "Amber Deinstein",
-        likes: 35
-      },
-      {
-        title: "Merry Christmas",
-        author: "Anna Belle",
-        likes: 25
-      }
-    ]
+    const blogs = helper.initialBlogs
 
     const result = listHelper.mostLikes(blogs)
     expect(result).toEqual(
       {
-        author: "Anna Belle",
-        likes: 50
+        author: "Erno Sahalaita",
+        likes: 60
       }
     )
   })
